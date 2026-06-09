@@ -3,19 +3,26 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Staff — Sunrise Academy</title>
+  <title>Staff — SLR Public School</title>
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="logo" href="index.html">Sunrise Academy</a>
+      <a class="brand" href="index.html">
+        <img src="assets/logo.png" alt="SLR Public School logo" class="logo-img" onerror="this.style.display='none'">
+        <div class="brand-text">
+          <span class="school-name">SLR Public School</span>
+          <span class="school-location">Tikuniya Khutar, Shahjahanpur</span>
+        </div>
+      </a>
+
       <button id="nav-toggle" aria-label="Open menu">☰</button>
-      <nav id="main-nav" class="nav">
+      <nav id="main-nav" class="nav" aria-label="Main navigation">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
+        <a href="academics.html">Programs</a>
         <a href="admissions.html">Admissions</a>
-        <a href="academics.html">Academics</a>
         <a href="staff.html" class="active">Staff</a>
         <a href="calendar.html">Calendar</a>
         <a href="contact.html" class="cta">Contact</a>
@@ -23,33 +30,34 @@
     </div>
   </header>
 
-  <main class="container">
+  <main class="container staff-page">
     <h1>Our Staff</h1>
-    <p>Our dedicated teachers and staff are committed to student growth.</p>
+    <p class="lead">Our experienced faculty and staff are committed to high-quality teaching and the wellbeing of every student.</p>
 
     <div class="grid-3 staff-list">
-      <div class="staff-card">
-        <div class="avatar">A</div>
+      <div class="staff-card card">
+        <div class="avatar large">A</div>
         <h3>Ms. Alvarez</h3>
         <p>Principal</p>
       </div>
-      <div class="staff-card">
-        <div class="avatar">J</div>
+      <div class="staff-card card">
+        <div class="avatar large">J</div>
         <h3>Mr. Johnson</h3>
         <p>Head of Science</p>
       </div>
-      <div class="staff-card">
-        <div class="avatar">L</div>
+      <div class="staff-card card">
+        <div class="avatar large">L</div>
         <h3>Ms. Lee</h3>
         <p>Arts Coordinator</p>
       </div>
-      <!-- Add more staff cards as needed -->
     </div>
+
+    <p class="center small">To add staff bios or photos, edit the staff.html file in the repository or send the images and details and I will add them.</p>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>© 2026 Sunrise Academy</p>
+      <p>© 2026 SLR Public School</p>
     </div>
   </footer>
 

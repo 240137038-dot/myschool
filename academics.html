@@ -3,19 +3,26 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Academics — Sunrise Academy</title>
+  <title>Programs — SLR Public School</title>
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="logo" href="index.html">Sunrise Academy</a>
+      <a class="brand" href="index.html">
+        <img src="assets/logo.png" alt="SLR Public School logo" class="logo-img" onerror="this.style.display='none'">
+        <div class="brand-text">
+          <span class="school-name">SLR Public School</span>
+          <span class="school-location">Tikuniya Khutar, Shahjahanpur</span>
+        </div>
+      </a>
+
       <button id="nav-toggle" aria-label="Open menu">☰</button>
-      <nav id="main-nav" class="nav">
+      <nav id="main-nav" class="nav" aria-label="Main navigation">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
+        <a href="academics.html" class="active">Programs</a>
         <a href="admissions.html">Admissions</a>
-        <a href="academics.html" class="active">Academics</a>
         <a href="staff.html">Staff</a>
         <a href="calendar.html">Calendar</a>
         <a href="contact.html" class="cta">Contact</a>
@@ -23,24 +30,34 @@
     </div>
   </header>
 
-  <main class="container">
-    <h1>Academics</h1>
-    <p>We offer a balanced curriculum with emphasis on critical thinking and project-based learning.</p>
+  <main class="container academics-page">
+    <h1>Academic Programs</h1>
+    <p class="lead">We offer a broad curriculum with pathways that challenge and engage students at every level.</p>
 
-    <h2>Programs</h2>
-    <ul>
-      <li>Primary Years Program</li>
-      <li>Middle School — interdisciplinary projects</li>
-      <li>High School — Advanced coursework and college prep</li>
-    </ul>
+    <section class="grid-3">
+      <div class="card">
+        <h3>Primary Years</h3>
+        <p>Foundational literacy and numeracy with a play-based approach.</p>
+      </div>
+      <div class="card">
+        <h3>Middle Years</h3>
+        <p>Interdisciplinary projects and skill-building for adolescent learners.</p>
+      </div>
+      <div class="card">
+        <h3>Senior School</h3>
+        <p>Advanced coursework and college/career preparation.</p>
+      </div>
+    </section>
 
-    <h2>Extracurriculars</h2>
-    <p>Robotics, music, art, sports, and community service clubs.</p>
+    <section>
+      <h2>Co-curricular</h2>
+      <p>Competitive sports, performing arts, clubs, and community service opportunities.</p>
+    </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>© 2026 Sunrise Academy</p>
+      <p>© 2026 SLR Public School</p>
     </div>
   </footer>
 
