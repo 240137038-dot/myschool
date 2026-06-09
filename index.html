@@ -3,20 +3,29 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Sunrise Academy — Home</title>
+  <title>SLR Public School — Home</title>
+  <meta name="description" content="SLR Public School — Tikuniya Khutar, Shahjahanpur — Excellence in education.">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/styles.css">
-  <meta name="description" content="Sunrise Academy — inspiring lifelong learning and leadership.">
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="logo" href="index.html">Sunrise Academy</a>
+      <a class="brand" href="index.html">
+        <img src="assets/logo.png" alt="SLR Public School logo" class="logo-img" onerror="this.style.display='none'">
+        <div class="brand-text">
+          <span class="school-name">SLR Public School</span>
+          <span class="school-location">Tikuniya Khutar, Shahjahanpur</span>
+        </div>
+      </a>
+
       <button id="nav-toggle" aria-label="Open menu">☰</button>
       <nav id="main-nav" class="nav" aria-label="Main navigation">
-        <a href="index.html">Home</a>
+        <a href="index.html" class="active">Home</a>
         <a href="about.html">About</a>
+        <a href="academics.html">Programs</a>
         <a href="admissions.html">Admissions</a>
-        <a href="academics.html">Academics</a>
         <a href="staff.html">Staff</a>
         <a href="calendar.html">Calendar</a>
         <a href="contact.html" class="cta">Contact</a>
@@ -27,80 +36,123 @@
   <main>
     <section class="hero">
       <div class="container hero-inner">
-        <h1>Welcome to Sunrise Academy</h1>
-        <p class="lead">Inspiring lifelong learning and leadership since 1998.</p>
-        <p><a class="btn" href="admissions.html">Apply Now</a></p>
+        <h1 class="hero-title">Empowering Students for a Brighter Future</h1>
+        <p class="hero-sub">Academic excellence, character development and a rich co-curricular life.</p>
+        <div class="hero-actions">
+          <a class="btn" href="admissions.html">Apply Now</a>
+          <a class="btn ghost" href="about.html">Learn More</a>
+        </div>
       </div>
     </section>
 
-    <section class="intro container">
+    <section class="container overview">
       <div class="grid-3">
-        <article>
-          <h2>Our Mission</h2>
-          <p>To provide an inclusive, high-quality education that prepares students for a changing world.</p>
-        </article>
-        <article>
-          <h2>Programs</h2>
-          <p>Robust STEM, Arts, and Language programs plus a wide range of extracurricular activities.</p>
-        </article>
-        <article>
-          <h2>Community</h2>
-          <p>Strong partnerships with families and local organizations for real-world learning.</p>
-        </article>
+        <div class="card feature">
+          <h3>Academic Excellence</h3>
+          <p>Rigorous curriculum with experienced faculty and a focus on critical thinking.</p>
+        </div>
+        <div class="card feature">
+          <h3>Holistic Development</h3>
+          <p>Strong programs in arts, sports, and clubs that build confidence and teamwork.</p>
+        </div>
+        <div class="card feature">
+          <h3>Safe Campus</h3>
+          <p>A secure, caring environment that supports every student’s wellbeing.</p>
+        </div>
       </div>
     </section>
 
-    <section class="container highlights">
-      <h2>Featured News</h2>
+    <section class="container programs">
+      <div class="section-head">
+        <h2>Featured Programs</h2>
+        <p class="small">A selection of our signature programs — more available on the Academics page.</p>
+      </div>
       <div class="grid-3">
-        <div class="card">
-          <h3>Spring Arts Showcase</h3>
-          <p>Students present projects on May 12.</p>
-        </div>
-        <div class="card">
-          <h3>Robotics Team Wins Regionals</h3>
-          <p>Congratulations to our robotics team for advancing to nationals.</p>
-        </div>
-        <div class="card">
-          <h3>Open House</h3>
-          <p>Join us for Open House on June 3 — tours and admissions info.</p>
-        </div>
+        <article class="program card">
+          <h4>STEM Enrichment</h4>
+          <p>Hands-on STEM projects, robotics club, and inquiry-led learning.</p>
+        </article>
+        <article class="program card">
+          <h4>Creative Arts</h4>
+          <p>Visual arts, music and drama with annual showcases and workshops.</p>
+        </article>
+        <article class="program card">
+          <h4>Sports & Wellness</h4>
+          <p>Competitive teams, physical education and a focus on student health.</p>
+        </article>
       </div>
     </section>
 
-    <section class="container preview-staff">
-      <h2>Meet Our Staff</h2>
-      <div class="grid-3 staff-preview">
-        <div class="staff-card">
-          <div class="avatar" aria-hidden="true">A</div>
-          <h4>Ms. Alvarez</h4>
-          <p>Principal</p>
-        </div>
-        <div class="staff-card">
-          <div class="avatar" aria-hidden="true">J</div>
-          <h4>Mr. Johnson</h4>
-          <p>Head of Science</p>
-        </div>
-        <div class="staff-card">
-          <div class="avatar" aria-hidden="true">L</div>
-          <h4>Ms. Lee</h4>
-          <p>Arts Coordinator</p>
-        </div>
+    <section class="container news">
+      <div class="section-head">
+        <h2>Latest News & Events</h2>
+        <p class="small">Stay up to date — we publish news and event details regularly.</p>
       </div>
-      <p class="center"><a class="btn ghost" href="staff.html">Meet the full staff</a></p>
+      <div class="grid-3">
+        <article class="card">
+          <h4>Open House — June 3, 2026</h4>
+          <p>Campus tours, meet our teachers, and admissions information.</p>
+        </article>
+        <article class="card">
+          <h4>Spring Arts Showcase</h4>
+          <p>Students present creative projects and performances.</p>
+        </article>
+        <article class="card">
+          <h4>Robotics Team Success</h4>
+          <p>Our robotics team qualified for the regional finals — congratulations!</p>
+        </article>
+      </div>
     </section>
 
-    <section class="quick-contact container">
-      <h2>Contact Us</h2>
-      <p>Email: <a href="mailto:info@sunrise.example">info@sunrise.example</a> • Phone: (555) 123-4567</p>
-      <p><a class="btn" href="contact.html">Get in touch</a></p>
+    <section class="container staff-preview">
+      <div class="section-head">
+        <h2>Meet our Leadership</h2>
+      </div>
+      <div class="grid-3 staff-grid">
+        <div class="staff-card card">
+          <div class="avatar">A</div>
+          <h4>Principal</h4>
+          <p>Dr. [Name] — committed to academic excellence and student welfare.</p>
+        </div>
+        <div class="staff-card card">
+          <div class="avatar">P</div>
+          <h4>Vice Principal</h4>
+          <p>Ms. [Name] — oversees curriculum and faculty development.</p>
+        </div>
+        <div class="staff-card card">
+          <div class="avatar">C</div>
+          <h4>Head of Admissions</h4>
+          <p>Mr. [Name] — admissions and community outreach.</p>
+        </div>
+      </div>
+      <p class="center"><a class="btn ghost" href="staff.html">View full staff</a></p>
     </section>
+
+    <section class="container prospectus">
+      <div class="prospectus-card card">
+        <h3>Download Our Prospectus</h3>
+        <p>Get detailed information about our programs, fees and admissions process.</p>
+        <p><a class="btn" href="#">Download (PDF)</a></p>
+      </div>
+    </section>
+
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p>© 2026 Sunrise Academy — All rights reserved.</p>
-      <p class="small">123 School Lane, Hometown — <a href="privacy.html">Privacy</a></p>
+    <div class="container footer-inner">
+      <div>
+        <strong>SLR Public School</strong>
+        <p>Tikuniya Khutar, Shahjahanpur</p>
+        <p>Email: <a href="mailto:info@sunrise.example">info@sunrise.example</a> • Phone: (555) 123-4567</p>
+      </div>
+
+      <div class="footer-actions">
+        <a href="privacy.html">Privacy</a>
+        <a href="contact.html" class="btn small">Contact Us</a>
+      </div>
+    </div>
+    <div class="container copyright">
+      <p>© 2026 SLR Public School — All rights reserved.</p>
     </div>
   </footer>
 

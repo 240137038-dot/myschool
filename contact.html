@@ -3,19 +3,26 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Contact — Sunrise Academy</title>
+  <title>Contact — SLR Public School</title>
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="logo" href="index.html">Sunrise Academy</a>
+      <a class="brand" href="index.html">
+        <img src="assets/logo.png" alt="SLR Public School logo" class="logo-img" onerror="this.style.display='none'">
+        <div class="brand-text">
+          <span class="school-name">SLR Public School</span>
+          <span class="school-location">Tikuniya Khutar, Shahjahanpur</span>
+        </div>
+      </a>
+
       <button id="nav-toggle" aria-label="Open menu">☰</button>
-      <nav id="main-nav" class="nav">
+      <nav id="main-nav" class="nav" aria-label="Main navigation">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
+        <a href="academics.html">Programs</a>
         <a href="admissions.html">Admissions</a>
-        <a href="academics.html">Academics</a>
         <a href="staff.html">Staff</a>
         <a href="calendar.html">Calendar</a>
         <a href="contact.html" class="active cta">Contact</a>
@@ -23,34 +30,40 @@
     </div>
   </header>
 
-  <main class="container">
+  <main class="container contact-page">
     <h1>Contact Us</h1>
-    <p>Email: <a href="mailto:info@sunrise.example">info@sunrise.example</a></p>
-    <p>Phone: (555) 123-4567</p>
+    <p class="lead">We welcome enquiries by phone, email or via the contact form below.</p>
 
-    <h2>Send us a message</h2>
-    <!-- Replace action with your Formspree endpoint or server endpoint -->
-    <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-      <label>
-        Your name
-        <input type="text" name="name" required>
-      </label>
-      <label>
-        Your email
-        <input type="email" name="_replyto" required>
-      </label>
-      <label>
-        Message
-        <textarea name="message" rows="6" required></textarea>
-      </label>
-      <button class="btn" type="submit">Send</button>
-      <p id="form-status" class="small" aria-live="polite"></p>
-    </form>
+    <div class="contact-grid">
+      <div class="contact-details card">
+        <h3>Contact Information</h3>
+        <p><strong>Address</strong><br>Tikuniya Khutar, Shahjahanpur</p>
+        <p><strong>Email</strong><br><a href="mailto:info@sunrise.example">info@sunrise.example</a></p>
+        <p><strong>Phone</strong><br>(555) 123-4567</p>
+      </div>
+
+      <form id="contact-form" class="contact-form card" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <label>
+          Full name
+          <input type="text" name="name" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="_replyto" required>
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="6" required></textarea>
+        </label>
+        <button class="btn" type="submit">Send message</button>
+        <p id="form-status" class="small" aria-live="polite"></p>
+      </form>
+    </div>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>© 2026 Sunrise Academy</p>
+      <p>© 2026 SLR Public School</p>
     </div>
   </footer>
 

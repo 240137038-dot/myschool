@@ -1,4 +1,4 @@
-// Mobile nav toggle
+// Mobile nav toggle and contact form handler
 document.addEventListener('DOMContentLoaded', function () {
   const navToggle = document.getElementById('nav-toggle');
   const nav = document.getElementById('main-nav');
@@ -10,9 +10,8 @@ document.addEventListener('DOMContentLoaded', function () {
       navToggle.setAttribute('aria-expanded', String(!showing));
     });
 
-    // Close nav when clicking outside (mobile)
     document.addEventListener('click', (e) => {
-      if (!nav.contains(e.target) && e.target !== navToggle && window.innerWidth <= 700) {
+      if (!nav.contains(e.target) && e.target !== navToggle && window.innerWidth <= 720) {
         nav.style.display = '';
         navToggle.setAttribute('aria-expanded', 'false');
       }
@@ -29,7 +28,6 @@ document.addEventListener('DOMContentLoaded', function () {
       const data = new FormData(form);
       const action = form.getAttribute('action') || '';
       try {
-        // Use fetch to submit to Formspree or your endpoint
         const res = await fetch(action, {
           method: form.method || 'POST',
           headers: { 'Accept': 'application/json' },

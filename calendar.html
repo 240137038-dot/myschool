@@ -3,19 +3,26 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Calendar — Sunrise Academy</title>
+  <title>Calendar — SLR Public School</title>
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="logo" href="index.html">Sunrise Academy</a>
+      <a class="brand" href="index.html">
+        <img src="assets/logo.png" alt="SLR Public School logo" class="logo-img" onerror="this.style.display='none'">
+        <div class="brand-text">
+          <span class="school-name">SLR Public School</span>
+          <span class="school-location">Tikuniya Khutar, Shahjahanpur</span>
+        </div>
+      </a>
+
       <button id="nav-toggle" aria-label="Open menu">☰</button>
-      <nav id="main-nav" class="nav">
+      <nav id="main-nav" class="nav" aria-label="Main navigation">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
+        <a href="academics.html">Programs</a>
         <a href="admissions.html">Admissions</a>
-        <a href="academics.html">Academics</a>
         <a href="staff.html">Staff</a>
         <a href="calendar.html" class="active">Calendar</a>
         <a href="contact.html" class="cta">Contact</a>
@@ -23,20 +30,19 @@
     </div>
   </header>
 
-  <main class="container">
+  <main class="container calendar-page">
     <h1>School Calendar</h1>
-    <p>Upcoming events and important dates.</p>
+    <p class="lead">Upcoming events and important dates.</p>
 
-    <!-- Replace the iframe src with your public Google Calendar embed URL if desired -->
-    <div class="calendar-embed">
-      <iframe src="https://calendar.google.com/calendar/embed?src=your_public_calendar_embed_url"
-              style="border:0" width="100%" height="600" frameborder="0" scrolling="no" title="School Calendar"></iframe>
+    <div class="calendar-embed card">
+      <!-- Replace the src with your public Google Calendar embed URL -->
+      <iframe src="https://calendar.google.com/calendar/embed?src=your_public_calendar_embed_url" style="border:0" width="100%" height="600" frameborder="0" scrolling="no" title="School Calendar"></iframe>
     </div>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>© 2026 Sunrise Academy</p>
+      <p>© 2026 SLR Public School</p>
     </div>
   </footer>
 
