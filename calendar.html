@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Calendar — Sunrise Academy</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Sunrise Academy</a>
+      <button id="nav-toggle" aria-label="Open menu">☰</button>
+      <nav id="main-nav" class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="admissions.html">Admissions</a>
+        <a href="academics.html">Academics</a>
+        <a href="staff.html">Staff</a>
+        <a href="calendar.html" class="active">Calendar</a>
+        <a href="contact.html" class="cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>School Calendar</h1>
+    <p>Upcoming events and important dates.</p>
+
+    <!-- Replace the iframe src with your public Google Calendar embed URL if desired -->
+    <div class="calendar-embed">
+      <iframe src="https://calendar.google.com/calendar/embed?src=your_public_calendar_embed_url"
+              style="border:0" width="100%" height="600" frameborder="0" scrolling="no" title="School Calendar"></iframe>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Sunrise Academy</p>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
